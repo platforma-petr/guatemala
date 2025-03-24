@@ -29,21 +29,21 @@ function gtag_report_conversion(url) {
 }
 </script>
 
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmación</title>
+    <title>Verify Human</title>
     <style>
-        /* Сброс стандартных стилей */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        /* Общие стили для body */
+        
         body {
             font-family: 'Inter', sans-serif;
-            background: #1A2A44; /* Темно-синий фон */
+            background: #1A2A44;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -51,69 +51,75 @@ function gtag_report_conversion(url) {
             min-height: 100vh;
             overflow: hidden;
         }
-
-        /* Стили для контейнера кнопки */
-        .button-container {
+        
+        .verification-container {
             text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
         }
-
-        /* Стили для кнопки */
-        .confirm-button {
-            background: #66D7EB; /* Светло-циановый цвет кнопки */
+        
+        h1 {
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .verify-button {
+            background: #66D7EB;
             border: none;
             border-radius: 12px;
             padding: 20px 40px;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
-            color: #1A2A44; /* Темно-синий цвет текста */
+            color: #1A2A44;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 8px 20px rgba(102, 215, 235, 0.3); /* Тень под цвет кнопки */
+            box-shadow: 0 8px 20px rgba(102, 215, 235, 0.3);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
-        /* Стили для ссылки внутри кнопки */
-        .confirm-button a {
-            text-decoration: none; /* Убираем подчеркивание */
-            color: inherit; /* Наследуем цвет текста от кнопки */
-        }
-
-        /* Убираем подчеркивание при наведении, активации и посещении */
-        .confirm-button a:hover,
-        .confirm-button a:active,
-        .confirm-button a:visited {
-            text-decoration: none;
-        }
-
-        /* Эффект при наведении на кнопку */
-        .confirm-button:hover {
+        
+        .verify-button:hover {
             transform: scale(1.05);
             box-shadow: 0 12px 30px rgba(102, 215, 235, 0.5);
         }
-
-        /* Эффект при нажатии на кнопку */
-        .confirm-button:active {
+        
+        .verify-button:active {
             transform: scale(0.98);
             box-shadow: 0 4px 10px rgba(102, 215, 235, 0.2);
         }
-
-        /* Адаптивность для мобильных устройств */
+        
+        .robot-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        
         @media (max-width: 768px) {
-            .confirm-button {
+            .verification-container {
+                padding: 30px;
+                width: 90%;
+            }
+                
+            .verify-button {
                 font-size: 18px;
                 padding: 15px 30px;
             }
         }
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="button-container">
-        <button class="confirm-button">
-            <a onclick="return gtag_report_conversion('https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama');" href="https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama">confirme que no es un robot</a>
-        </button>
+    <div class="verification-container">
+        <div class="robot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h1>Verificación Humana</h1>
+        <a onclick="return gtag_report_conversion('https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama');" href="https://spectraxro.com/mWvcrnDW?utm_campaign=kms_panama">
+            <button class="verify-button">Confirme que no es un robot</button>
+        </a>
     </div>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91daefe1cbc5135d',t:'MTc0MTUyNzEzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 </html>
